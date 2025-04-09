@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glamora Beauty💄 Skincare & Makeup Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(19, 18, 18, 0.4);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="text-white relative">
+
+  <!-- 🔮 Background Video (Full Page & Scrollable) -->
+  <video autoplay muted loop playsinline class="video-background">
+    <source src="./store.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  
+
+  <!-- 🌟 Navbar -->
+<nav class="bg-purple-600 bg-opacity-70 text-white py-4 fixed top-0 left-0 w-full z-20 shadow-md">
+  <div class="container mx-auto px-6 flex justify-between items-center">
+    <!-- Logo and Brand Name -->
+    <a href="#" class="flex items-center space-x-2">
+      <img src="./images/glamora-logo.png" alt="Glamora Logo" class="h-10 w-auto object-contain">
+      <span class="text-2xl font-bold">Glamora Beauty</span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <div class="hidden md:flex space-x-8">
+      <a href="#skincare" class="hover:text-purple-200">Skincare</a>
+      <a href="#makeup" class="hover:text-purple-200">Makeup</a>
+      <a href="#haircare" class="hover:text-purple-200">Haircare</a>
+      <a href="#contact" class="hover:text-purple-200">Contact</a>
+      <a href="#login" class="hover:text-purple-200">Login</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation Links -->
+  <div id="mobile-menu" class="md:hidden px-6 mt-4 space-y-4 hidden">
+    <a href="#skincare" class="block hover:text-purple-200">Skincare</a>
+    <a href="#makeup" class="block hover:text-purple-200">Makeup</a>
+    <a href="#haircare" class="block hover:text-purple-200">Haircare</a>
+    <a href="#contact" class="block hover:text-purple-200">Contact</a>
+    <a href="#login" class="block hover:text-purple-200">Login</a>
+  </div>
+</nav>
+
+<!-- Additional Content -->
+<div class="pt-20">
+  <!-- Your page content here -->
+</div>
+
+
+  <!-- 🌟 Hero Section -->
+  <section class="py-40 text-center relative z-10 px-6">
+    <div class="container mx-auto">
+      <h1 class="text-5xl font-bold mb-6 drop-shadow-lg">Discover Your Beauty</h1>
+      <p class="text-xl mb-8 drop-shadow-md">Explore our premium skincare and makeup products designed just for you.</p>
+      
+      <a href="#skincare">
+        <button class="bg-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-purple-700 transition">
+          Shop Now
+        </button>
+      </a>
+      
+    </div>
+  </section>
+
+    <!-- Section Style -->
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+  
+  <!-- Skincare Section -->
+<section id="skincare" class="py-20">
+  <div class="container mx-auto px-6 glass rounded-2xl p-10 shadow-lg">
+    <h2 class="text-3xl font-bold text-center mb-16 text-black">Skincare</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/product-06.jpg" alt="Glow Serum" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Glow Serum</h3>
+        <p class="text-black">Brightens and evens out skin tone.</p>
+        <p class="text-purple-800 font-bold mt-2">৳1850</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/product-05.jpg" alt="Night Repair Cream" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Night Repair Cream</h3>
+        <p class="text-black">Rejuvenates skin overnight.</p>
+        <p class="text-purple-800 font-bold mt-2">৳1,050</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/product-03.jpg" alt="Face Cleanser" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Face Cleanser</h3>
+        <p class="text-black">Gentle cleansing for radiant skin.</p>
+        <p class="text-purple-800 font-bold mt-2">৳999</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Haircare Section -->
+<section class="py-20">
+  <div class="container mx-auto px-6 glass rounded-2xl p-10 shadow-lg">
+    <h2 class="text-3xl font-bold text-center mb-16 text-black">Haircare</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/product-01.jpg" alt="Keratin Shampoo" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Keratin Shampoo</h3>
+        <p class="text-black">Smooth and strong hair everyday.</p>
+        <p class="text-purple-800 font-bold mt-2">৳2250</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/product-08.jpg" alt="Hair Mask" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Hair Mask</h3>
+        <p class="text-black">Deep conditioning for dry hair.</p>
+        <p class="text-purple-800 font-bold mt-2">৳1,070</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/product-10.jpg" alt="Hair Oil" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Hair Oil</h3>
+        <p class="text-black">Natural nourishment for your scalp.</p>
+        <p class="text-purple-800 font-bold mt-2">৳1,200</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Makeup Section -->
+<section class="py-20">
+  <div class="container mx-auto px-6 glass rounded-2xl p-10 shadow-lg">
+    <h2 class="text-3xl font-bold text-center mb-16 text-black">Makeup</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/foundation.jpg" alt="Foundation Stick" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Foundation Stick</h3>
+        <p class="text-black">Perfect base for all-day wear.</p>
+        <p class="text-purple-800 font-bold mt-2">৳1750</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/blush.jpg" alt="Blush Palette" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Blush Palette</h3>
+        <p class="text-black">Glow up your cheeks naturally.</p>
+        <p class="text-purple-800 font-bold mt-2">৳880</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/mascara.jpg" alt="Mascara" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Waterproof Mascara</h3>
+        <p class="text-black">Lift and volumize your lashes.</p>
+        <p class="text-purple-800 font-bold mt-2">৳1,120</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bodycare Section -->
+<section class="py-20">
+  <div class="container mx-auto px-6 glass rounded-2xl p-10 shadow-lg">
+    <h2 class="text-3xl font-bold text-center mb-16 text-black">Bodycare</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/scrub.jpg" alt="Body Scrub" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Body Scrub</h3>
+        <p class="text-black">Exfoliates and refreshes your skin.</p>
+        <p class="text-purple-800 font-bold mt-2">৳1,690</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/lotion.jpg" alt="Moisturizing Lotion" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Moisturizing Lotion</h3>
+        <p class="text-black">Keeps skin soft and hydrated.</p>
+        <p class="text-purple-800 font-bold mt-2">৳880</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+      <div class="p-6 rounded-lg shadow text-center bg-white">
+        <img src="images/cream.jpg" alt="Foot Cream" class="w-full h-64 object-cover rounded-xl mb-4 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold text-black">Foot Cream</h3>
+        <p class="text-black">Repairs cracked heels gently.</p>
+        <p class="text-purple-800 font-bold mt-2">৳750</p>
+        <button class="mt-4 bg-purple-800 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-white hover:text-purple-800 transition duration-300">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Under ৳2000 Section -->
+<section class="py-8 px-6 bg-transparent">
+  <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-8 shadow-lg">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-xl font-semibold">Under ৳2000</h2>
+      <a href="#" class="text-sm text-bold-purple-900 hover:underline">Shop All Products &rarr;</a>
+    </div>
+
+    <!-- Responsive Grid Layout -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+      <!-- Product 1 -->
+      <div class="text-center">
+        <img src="images/product-01.jpg" alt="Product 1" class="mx-auto mb-2 rounded-lg">
+        <p class="text-sm font-semibold">৳1699</p>
+        <p class="text-sm">Anti-Aging Vitamin C Serum</p>
+        <p class="text-xs text-purple-500">★★★★★</p>
+        <button class="mt-2 bg-purple-600 text-white  border border-purple-500 px-4 py-1 rounded-full text-sm font-medium hover:bg-purple-50 transition">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="text-center">
+        <img src="images/product-02.jpg" alt="Product 2" class="mx-auto mb-2 rounded-lg">
+        <p class="text-sm font-semibold">৳1299</p>
+        <p class="text-sm">Green Tea Cleansing Scrub</p>
+        <p class="text-xs text-purple-500">★★★★☆</p>
+        <button class="mt-2 bg-purple-600 text-white  border border-purple-500 px-4 py-1 rounded-full text-sm font-medium hover:bg-purple-50 transition">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="text-center">
+        <img src="images/product-03.jpg" alt="Product 3" class="mx-auto mb-2 rounded-lg">
+        <p class="text-sm font-semibold">৳1190</p>
+        <p class="text-sm">Nourishing Night Cream</p>
+        <p class="text-xs text-purple-500">★★★★★</p>
+        <button class="mt-2 bg-purple-600 text-white  border border-purple-500 px-4 py-1 rounded-full text-sm font-medium hover:bg-purple-50 transition">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="text-center">
+        <img src="images/product-11.jpg" alt="Product 4" class="mx-auto mb-2 rounded-lg">
+        <p class="text-sm font-semibold">৳1599</p>
+        <p class="text-sm">Collagen Boost Serum</p>
+        <p class="text-xs text-purple-500">★★★★★</p>
+        <button class="mt-2 bg-purple-600 text-white  border border-purple-500 px-4 py-1 rounded-full text-sm font-medium hover:bg-purple-50 transition">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="text-center">
+        <img src="images/product-17.jpg" alt="Product 5" class="mx-auto mb-2 rounded-lg">
+        <p class="text-sm font-semibold">৳1099</p>
+        <p class="text-sm">Hydrating Eye Cream</p>
+        <p class="text-xs text-purple-500">★★★★★</p>
+        <button class="mt-2 bg-purple-600 text-white  border border-purple-500 px-4 py-1 rounded-full text-sm font-medium hover:bg-purple-50 transition">Add to Cart</button>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- Autumn Skincare Section -->
+<section class="py-16 md:py-24">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="relative glass rounded-3xl p-8 md:p-12 text-center max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">Autumn Skincare Essentials</h2>
+      <p class="text-white text-sm md:text-lg max-w-2xl mx-auto mb-8 md:mb-12">
+        Hydration, glow, and comfort—perfectly tailored for autumn weather.
+      </p>
+
+      <!-- Banner with Professional Design -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 mb-12">
+        <!-- Text and Banner Image -->
+        <div class="relative sm:col-span-2 md:col-span-1">
+          <img src="images/hero-banner-1.jpg" alt="Autumn Skincare" class="w-full h-full object-cover rounded-lg shadow-lg">
+          <div class="absolute top-1/2 left-6 transform -translate-y-1/2 text-left text-white sm:left-8 md:left-12">
+            
+            <button class="bg-purple-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all">
+              25% Off Everything
+            </button>
+          </div>
+        </div>
+      
+        <!-- Secondary Image -->
+        <div>
+          <img src="images/blog-1.jpg" alt="25% Off" class="w-full h-full object-cover rounded-lg shadow-md">
+        </div>
+      </div>
+      
+      <!-- Explore Button -->
+      <button class="mt-8 bg-white/90 hover:bg-white text-purple-900 px-8 py-3 rounded-xl font-medium text-sm md:text-base transition-all">
+        Explore Collection
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Form Section -->
+<section class="py-20 px-6 bg-white/20 backdrop-blur-md text-black">
+  <div class="container mx-auto max-w-2xl">
+    <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+    <form class="bg-white/10 p-8 rounded-2xl shadow-lg space-y-6 backdrop-blur-md">
+      <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-white/20 placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-300 text-black">
+      <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-white/20 placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-300 text-black">
+      <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg bg-white/20 placeholder-black focus:outline-none focus:ring-2 focus:ring-purple-300 text-black"></textarea>
+      <center>
+        <button type="submit" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full text-white font-semibold transition duration-300">Send Message</button>
+      </center>
+    </form>
+  </div>
+</section>
+
+
+<!-- ✅ Lucide Icons CDN (Put in <head> if not already) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- ✅ Updated Footer -->
+  <footer id="contact" class="bg-purple-600 bg-opacity-70 text-white py-10 relative z-10">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg font-medium">&copy; 2025 Glamora Beauty. All rights reserved.</p>
+    
+      <div class="mt-6 flex justify-center space-x-6">
+        <a href="#" aria-label="Instagram" class="hover:text-purple-300">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </a>
+        <a href="#" aria-label="Facebook" class="hover:text-purple-300">
+          <i data-lucide="facebook" class="w-6 h-6"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/waziha0210" aria-label="linkedIN" class="hover:text-purple-300">
+          <i data-lucide="linkedIN" class="w-6 h-6"></i>
+        </a>
+        <a href="#" aria-label="YouTube" class="hover:text-purple-300">
+          <i data-lucide="youtube" class="w-6 h-6"></i>
+        </a>
+        
+      </div>
+    </div>
+  
+    <br></br>
+    <!-- Image positioned at the bottom-right corner -->
+    <div class="absolute bottom-4 right-4">
+      <img src="images/pay.png" alt="Footer Image">
+    </div>
+  </footer>
+  
+  <!-- ✅ Script to Toggle Mobile Menu -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  
+    // ✅ Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+  
+
+</body>
+</html>
